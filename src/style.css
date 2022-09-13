@@ -124,3 +124,10 @@ video {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
+#footer {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+#source {
+  text-decoration: none;
+}
