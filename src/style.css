@@ -131,3 +131,7 @@ video {
 #source {
   text-decoration: none;
 }
+#celsius-link.active {
+  color: #3f4954;
+  cursor: default;
+}
