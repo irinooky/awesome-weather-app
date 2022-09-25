@@ -22,9 +22,10 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+
 function changeAnimation(description) {
   let video = document.querySelector("#animation");
-  if (description === "light intensity shower rain") {
+  if ((description === "light intensity shower rain", "rain")) {
     video.setAttribute("src", `videos/rainyWeather.mp4`);
   } else {
     video.setAttribute("src", `videos/sunnyWeather.mp4`);
