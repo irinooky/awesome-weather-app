@@ -28,7 +28,7 @@ function changeAnimation(description) {
   if ((description === "light intensity shower rain", "rain")) {
     video.setAttribute("src", `videos/rainyWeather.mp4`);
   } else {
-    video.setAttribute("src", `videos/sunnyWeather.mp4`);
+    video.setAttribute("src", `videos/clearSkyWeather.mp4`);
   }
 }
 
