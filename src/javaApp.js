@@ -22,6 +22,14 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function changeAnimation(description) {
+  let video = document.querySelector("#animation");
+  if ((description === "light intensity shower rain", "rain")) {
+    video.setAttribute("src", `videos/rainyWeather.mp4`);
+  } else {
+    video.setAttribute("src", `videos/sunnyWeather.mp4`);
+  }
+}
 
 function displayWeatherCondition(response) {
   console.log(response.data);
@@ -40,7 +48,10 @@ function displayWeatherCondition(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = response.data.wind.speed;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+
+  changeAnimation(response.data.weather[0].description);
 }
+
 let units = "metric";
 
 function search(city) {
