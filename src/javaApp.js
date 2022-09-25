@@ -25,8 +25,16 @@ function formatDate(timestamp) {
 
 function changeAnimation(description) {
   let video = document.querySelector("#animation");
-  if (description === "light intensity shower rain") {
+  if (description === "light intensity shower rain" && "rain") {
     video.setAttribute("src", `videos/rainyWeather.mp4`);
+  } else if (
+    description === "broken clouds" &&
+    "scattered clouds" &&
+    "few clouds"
+  ) {
+    video.setAttribute("src", `videos/cloudsWeather.mp4`);
+  } else if (description === "sunny") {
+    video.setAttribute("src", `videos/sunnyWeather.mp4`);
   } else {
     video.setAttribute("src", `videos/clearSkyWeather.mp4`);
   }
