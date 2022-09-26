@@ -22,7 +22,6 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
-
 function changeAnimation(description) {
   let video = document.querySelector("#animation");
   if (description === "light intensity shower rain" && "rain") {
